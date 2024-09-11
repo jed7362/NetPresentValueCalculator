@@ -1,0 +1,65 @@
+/* Border line for results */
+.list-group-item {
+    border-bottom: 1px solid #ddd; /* Light gray border */
+  }
+  
+  /* Remove the border from the last item */
+  .list-group-item:last-child {
+    border-bottom: none;
+  }
+  
+  /* Shorten pagination: Show only a few pages at a time */
+  .pagination {
+    justify-content: center; /* Center align pagination */
+  }
+  
+  .page-item {
+    cursor: pointer;
+  }
+  
+  .page-item.disabled .page-link {
+    pointer-events: none;
+    opacity: 0.6;
+  }
+  
+  .page-item.active .page-link {
+    background-color: #007bff; /* Bootstrap primary color */
+    border-color: #007bff;
+  }
+  
+  .page-link {
+    border: 1px solid #ddd; /* Border for page links */
+  }
+  
+  /* Adjust size of pagination items for better fit */
+  .page-item {
+    font-size: 0.875rem; /* Smaller font size */
+  }
+  
+  .page-link {
+    padding: 0.5rem 0.75rem; /* Smaller padding */
+  }
+  
+  /* Shorten pagination by hiding some links */
+  .pagination .page-item {
+    display: none;
+  }
+  
+  /* Show only first, last, and current page with surrounding pages */
+  .pagination .page-item:first-child,
+  .pagination .page-item:last-child,
+  .pagination .page-item.active,
+  .pagination .page-item:nth-child(-n+3), /* Show first 3 pages */
+  .pagination .page-item:nth-last-child(-n+4) /* Show last 3 pages */ {
+    display: block;
+  }
+  
+  /* Style for 'Previous' and 'Next' */
+  .page-item:first-child {
+    display: block;
+  }
+  
+  .page-item:last-child {
+    display: block;
+  }
+  
